@@ -106,7 +106,7 @@ lab3data <- lab3data %>%
 
 # Get Summary Descriptive Statistics
 ```{r}
-lab3data <- lab3data %>%
+lab3data %>%
   group_by(Gender) %>%
   dplyr::summarize(mean_RSE    = mean(RSE),
       mean_SWL    = mean(SWL),
@@ -131,8 +131,9 @@ lab3data<- lab3data %>%
 
 ggplot(lab3data, aes(x = Gender, y = RSE)) + geom_violin(aes(fill=Gender)) + scale_fill_simpsons() + theme_modern()
 
-#Create a plot for SWL by Gender with a different color palette
 ggplot(lab3data, aes(x = Gender, y = SWL)) + geom_violin(aes(fill=Gender)) + scale_fill_pizza() + theme_modern()
+
+#Create a plot for SWL by Gender with a different color palette
 
 ```
 
