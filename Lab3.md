@@ -324,3 +324,10 @@ ggplot(lab3data, aes(x = Gender, y = SWL)) + geom_violin(aes(fill=Gender)) + sca
 ```
 
 # Q2: What you can tell from looking at a violin plot? What you cannot tell? What inferences you can make based on the two violin plots?
+
+The violin plot shows the distribution of scores among males and
+females, which provides us with a general comparison of scores within
+group. It allows a comparison between the distribution of males and that
+of females. However, because it doesn not shows the specific statistics
+of the scores, such as the means of the each group, it is difficult to
+compare the magnitude of the difference between the two groups.
